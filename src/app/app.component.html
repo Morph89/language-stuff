@@ -1,13 +1,18 @@
 <div id="cardholder" class="container-fluid">
-  <div class="row">
-    <div class="col-4 lang-card">A</div>
-    <div class="col-4 lang-card">B</div>
-    <div class="col-4 lang-card">C</div>
-    <div class="col-4 lang-card">C</div>
-    <div class="col-4 lang-card">C</div>
-    <div class="col-4 lang-card">C</div>
-    <div class="col-4 lang-card">C</div>
-    <div class="col-4 lang-card">C</div>
-    <div class="col-4 lang-card">C</div>
-  </div>
+	<div class="row">
+		<div class="col-4 lang-card" *ngFor="let card of cards">
+			<div class="card-side-wrapper">
+				<div class="side card-front">
+          <div class="text-holder">
+            <span>Perspective</span>
+          </div>
+        </div>
+				<div class="side card-back">
+          <div class="text-holder">
+            <span>Perspektíva</span>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
 </div>
